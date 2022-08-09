@@ -1,4 +1,3 @@
 export function sum(a,b) {
-    console.log("Сумма " + (a+b));
-    console.log("Произведение  " + (a*b));
+    console.log("Сумма " + (a+b) + " Произведение " + (a*b));
 }
