@@ -1,3 +1,4 @@
+//месяц, соотвествующий числу (2.2)
 export function month(){
     const m=prompt("введите номер месяца (1-12)");
     switch (m) {

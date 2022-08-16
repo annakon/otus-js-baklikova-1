@@ -1,3 +1,4 @@
+//выводит сумму числе числа (1.3)
 export function sumDigit(){
     const num = prompt('Enter the number: ');
     const digit3 = num % 10;
