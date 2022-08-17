@@ -1,3 +1,4 @@
+//задание 7
 export function makeInteractiveList(el) {
     const input = document.createElement("input");
     el.append(input);
