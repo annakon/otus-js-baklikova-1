@@ -8,3 +8,7 @@ export function sumArray(){
 export function mult2Array(){
     return array.map((x)=>{return x*2;});
 }
+
+export function maxminArray(){
+   console.log("max="+Math.max.apply(null, array)+" min="+Math.min.apply(null, array));
+}
