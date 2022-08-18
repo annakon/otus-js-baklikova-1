@@ -11,4 +11,10 @@ describe("getDay",()=>{
         getDay();
         expect(console.log).toHaveBeenCalledWith("понедельник");
     });
+    it("return понедельник",()=>{
+        jest.spyOn(console, "log");
+        jest.spyOn(window, "prompt").mockImplementation(() => "31.12.2021");
+        getDay();
+        expect(console.log).toHaveBeenCalledWith("пятница");
+    });
 });
