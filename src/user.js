@@ -1,21 +1,21 @@
-//домашнее задание 4, работа с объектом user
-let user={
-    name: "John"
+// домашнее задание 4, работа с объектом user
+const user = {
+  name: 'John',
+};
+
+export function age() {
+  user.age = prompt('введите возраст');
+  return user.age;
 }
 
-export function age(){
-    user.age=prompt("введите возраст");
-    return user.age;
-}
-
-export function admin(){
-    let ret = Object.assign({},user);
-    ret.role='admin';
-    return ret;
+export function admin() {
+  const ret = { ...user };
+  ret.role = 'admin';
+  return ret;
 }
 
 export function destructuringAssignment() {
-    let adm=admin();
-    let {name,age=0,role=''}=adm;
-    console.log("name="+name+" age="+age+" role="+role);
+  const adm = admin();
+  const { name, age = 0, role = '' } = adm;
+  console.log(`name=${name} age=${age} role=${role}`);
 }
