@@ -3,7 +3,7 @@ const user = {
   name: 'John',
 };
 
-export function age() {
+export function changeAge() {
   user.age = prompt('введите возраст');
   return user.age;
 }

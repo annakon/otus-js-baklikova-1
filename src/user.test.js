@@ -1,12 +1,12 @@
-import { admin, age, destructuringAssignment } from './user';
+import { admin, changeAge, destructuringAssignment } from './user';
 
-describe('age', () => {
+describe('changeAge', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
   it('возраст 25', () => {
     jest.spyOn(window, 'prompt').mockImplementation(() => 25);
-    expect(age()).toBe(25);
+    expect(changeAge()).toBe(25);
   });
 });
 
@@ -28,7 +28,7 @@ describe('destructuringAssignment', () => {
   it('возвращает name, age, role', () => {
     jest.spyOn(console, 'log');
     jest.spyOn(window, 'prompt').mockImplementation(() => 25);
-    age();
+    changeAge();
     destructuringAssignment();
     expect(console.log).toHaveBeenCalledWith('name=John age=25 role=admin');
   });
