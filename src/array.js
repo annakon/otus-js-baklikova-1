@@ -10,5 +10,7 @@ export function mult2Array() {
 }
 
 export function maxminArray() {
-  console.log(`max=${Math.max.apply(null, array)} min=${Math.min.apply(null, array)}`);
+  console.log(
+    `max=${Math.max.apply(null, array)} min=${Math.min.apply(null, array)}`
+  );
 }

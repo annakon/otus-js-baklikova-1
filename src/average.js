@@ -2,7 +2,7 @@
 консоль среднее арифметическое всех нечётных
 чисел от 1 до N. */
 export function average() {
-  const N = prompt('введите N');
+  const N = prompt("введите N");
   let num = 0;
   let sum = 0;
   for (let i = 1; i <= N; i++) {

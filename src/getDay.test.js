@@ -1,19 +1,19 @@
-import { getDay } from './getDay';
+import { getDay } from "./getDay";
 
-describe('getDay', () => {
+describe("getDay", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
-  it('return понедельник', () => {
-    jest.spyOn(console, 'log');
-    jest.spyOn(window, 'prompt').mockImplementation(() => '15.08.2022');
+  it("return понедельник", () => {
+    jest.spyOn(console, "log");
+    jest.spyOn(window, "prompt").mockImplementation(() => "15.08.2022");
     getDay();
-    expect(console.log).toHaveBeenCalledWith('понедельник');
+    expect(console.log).toHaveBeenCalledWith("понедельник");
   });
-  it('return понедельник', () => {
-    jest.spyOn(console, 'log');
-    jest.spyOn(window, 'prompt').mockImplementation(() => '31.12.2021');
+  it("return понедельник", () => {
+    jest.spyOn(console, "log");
+    jest.spyOn(window, "prompt").mockImplementation(() => "31.12.2021");
     getDay();
-    expect(console.log).toHaveBeenCalledWith('пятница');
+    expect(console.log).toHaveBeenCalledWith("пятница");
   });
 });
