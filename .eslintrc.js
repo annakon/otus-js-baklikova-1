@@ -15,5 +15,9 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'import/prefer-default-export': 'off',
+    'max-len': 'off',
+    'no-plusplus': 'off',
+    'default-case': 'off',
+    'no-alert': 'off',
   },
 };
