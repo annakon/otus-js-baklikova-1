@@ -1,3 +1,3 @@
 module.exports = async () => {
-  process.env.TZ = "GMT+3";
+  process.env.TZ = "GMT+03:00";
 };
