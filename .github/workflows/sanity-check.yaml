@@ -12,3 +12,6 @@ jobs:
       - name: Lint check
         run: |
           npm run lint:fix
+      - name: Run tests
+        run: |
+          npm run test
