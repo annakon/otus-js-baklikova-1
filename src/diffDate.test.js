@@ -6,14 +6,8 @@ describe("diffDate", () => {
   });
   it("return minutes", () => {
     jest.spyOn(console, "log");
-    jest
-      .spyOn(Date, "now")
-      .mockImplementation(() =>
-        Date(
-          "Mon Aug 22 2022 15:43:10 GMT+0300 (Москва, стандартное время)"
-        ).valueOf()
-      );
+    jest.spyOn(Date, "now").mockImplementation(() => 1660850523095);
     diffDate();
-    expect(console.log).toHaveBeenCalledWith(944);
+    expect(console.log).toHaveBeenCalledWith(1342);
   });
 });

@@ -14,4 +14,4 @@ jobs:
           npm run lint:fix
       - name: Run tests
         run: |
-          npm run test 
+          npm run test
